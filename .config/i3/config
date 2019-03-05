@@ -1,19 +1,5 @@
 # vim: filetype=i3
-#  _        _    ____  ____ ____
-# | |      / \  |  _ \| __ ) ___|
-# | |     / _ \ | |_) |  _ \___ \
-# | |___ / ___ \|  _ <| |_) |__) |
-# |_____/_/   \_\_| \_\____/____/
-#
-# File originally by Luke Smith
-# Website: http://lukesmith.xyz
-# Email: luke@lukesmith.xyz
-# YouTube: https://youtube.com/c/LukeSmithxyz
-# Github: https://github.com/LukeSmithxyz
 
-# This config file will use environmental variables such as $BROWSER and $TERMINAL.
-# You can set these variables in ~/.profile or ~/.bash_profile if you have it as below:
-#
 # export FILE="ranger"
 # export TERMINAL="st"
 
@@ -54,6 +40,7 @@ exec --no-startup-id dunst
 exec --no-startup-id xcompmgr
 # Runs the key remapping scripts
 exec --no-startup-id remaps
+exec setxkbmap -layout uk -option caps:super
 # Unclutter makes the mouse invisible after a brief period
 exec --no-startup-id unclutter
 # Run the script to update the mpd i3block on change.
